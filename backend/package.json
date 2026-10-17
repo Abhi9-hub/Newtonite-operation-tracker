@@ -9,7 +9,10 @@
     "build": "tsc",
     "start": "node dist/index.js",
     "test": "vitest run",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "migrate": "tsx src/db/migrate.ts",
+    "migrate:dev": "tsx src/db/migrate.ts --dev",
+    "seed": "tsx src/db/seed.ts"
   },
   "keywords": [],
   "author": "",
